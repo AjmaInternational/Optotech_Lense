@@ -84,20 +84,18 @@
             // Render cards
             products.forEach((prod, i) => {
                 const card = `
-                    <div class="product-card brand-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col fade-up" data-brand="${prod.brand}" style="transition-delay: ${ (i % 3) * 100 }ms">
+                    <div class="product-card brand-card bg-white rounded-3xl overflow-hidden border border-gray-100 flex flex-col fade-up-group" data-brand="${prod.brand}">
                         <div class="h-64 bg-gray-50 relative overflow-hidden group">
                             <img src="${prod.img}" alt="${prod.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute top-6 right-6 bg-white/95 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold text-[#0b1120] shadow-sm">${prod.brand}</div>
+                            <div class="absolute top-6 right-6 bg-white/95 backdrop-blur px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase shadow-sm">${prod.brand}</div>
                         </div>
                         <div class="p-8 flex-grow">
                             <h3 class="text-xl font-bold mb-3">${prod.name}</h3>
-                            <p class="text-sm text-gray-500 mb-6 font-medium tracking-wide">Multi-Coated • Precision Optics</p>
+                            <p class="text-sm text-gray-400 mb-6 font-medium tracking-wide">Multi-Coated • Precision Optics</p>
                             <div class="flex justify-between items-center mb-8 pb-6 border-b border-gray-50">
-                                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">MOQ: 50 Units</span>
-                                <span class="text-[#0b1120] font-bold">Wholesale Only</span>
+                                <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest">MOQ: 50 Units</span>
                             </div>
-                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20${encodeURIComponent(prod.name)}" class="w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold hover:bg-[#128C7E] transition-all flex items-center justify-center shadow-lg hover:shadow-green-200">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.836 2.964 1.277 4.56 1.278 4.877 0 8.846-3.968 8.848-8.846 0-2.364-.92-4.585-2.59-6.255s-3.892-2.592-6.258-2.592c-4.879 0-8.848 3.968-8.851 8.847 0 1.594.43 3.148 1.257 4.54l-.824 3.01 3.058-.802zm10.948-6.144c-.279-.14-1.647-.812-1.903-.905-.255-.092-.441-.14-.627.14-.186.281-.72.905-.882 1.092-.163.186-.325.21-.604.07-.279-.14-1.18-.435-2.248-1.388-.83-.741-1.39-1.656-1.553-1.936-.163-.28-.018-.431.122-.571.125-.127.279-.325.419-.488.14-.163.186-.279.279-.465.093-.186.047-.349-.023-.488-.07-.14-.627-1.512-.859-2.07-.226-.544-.454-.471-.627-.48l-.535-.01c-.186 0-.488.07-.744.349-.256.279-.977.953-.977 2.325s1.001 2.701 1.14 2.887c.14.186 1.97 3.007 4.773 4.211.666.286 1.186.456 1.591.585.67.213 1.279.183 1.761.111.537-.08 1.647-.674 1.88-1.325.233-.651.233-1.21.163-1.325-.07-.116-.256-.186-.535-.326z"/></svg>
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20${encodeURIComponent(prod.name)}" class="w-full bg-[#0b1120] text-white py-4 rounded-2xl font-bold hover:bg-[#2563eb] transition-all flex items-center justify-center">
                                 Inquire Now
                             </a>
                         </div>

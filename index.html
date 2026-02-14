@@ -16,45 +16,64 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section relative h-screen flex items-center overflow-hidden bg-white">
-            <div class="hero-bg absolute inset-0 z-0 opacity-10">
+            <div class="hero-bg absolute inset-0 z-0 opacity-5">
                 <img src="https://images.unsplash.com/photo-1556761175-5973cf0f32e7?auto=format&fit=crop&q=80&w=2000" alt="Background" class="w-full h-full object-cover">
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="fade-up">
-                        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-                            See the <span class="text-[#1e88e5]">Difference.</span><br>
-                            Be the <span class="text-[#1e88e5]">Difference.</span>
+                        <div class="mb-6 flex items-center space-x-2 text-[#2563eb] font-bold tracking-widest uppercase text-xs">
+                            <span class="w-8 h-[1px] bg-[#2563eb]"></span>
+                            <span>Opto Tech Premium</span>
+                        </div>
+                        <h1 class="text-6xl md:text-8xl font-bold leading-tight mb-8">
+                            See the <span class="text-[#2563eb]">Difference.</span><br>
+                            Be the <span class="text-[#2563eb]">Difference.</span>
                         </h1>
-                        <p class="text-xl text-gray-600 mb-8 max-w-lg">
-                            Premium wholesale optical lenses for professionals. Experience Japanese precision and revolutionary coating technology.
+                        <p class="text-lg text-gray-500 mb-10 max-w-md leading-relaxed">
+                            Experience the pinnacle of optical engineering. Precision-crafted lenses with advanced Japanese material and coating technology for the discerning professional.
                         </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="all-lenses.html" class="bg-[#0b2a4a] text-white px-8 py-4 rounded-full font-bold hover:bg-[#1e88e5] transition-all transform hover:scale-105 shadow-lg">
-                                Explore All Lenses
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <a href="all-lenses.html" class="bg-[#0b1120] text-white px-10 py-5 rounded-full font-bold hover:bg-[#2563eb] transition-all transform hover:scale-105 shadow-xl flex items-center group">
+                                Explore Products
+                                <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
-                            <a href="dealer.html" class="border-2 border-[#0b2a4a] text-[#0b2a4a] px-8 py-4 rounded-full font-bold hover:bg-[#0b2a4a] hover:text-white transition-all">
+                            <a href="dealer.html" class="text-[#0b1120] font-bold hover:text-[#2563eb] transition-all flex items-center group">
                                 Become a Dealer
+                                <svg class="ml-1 w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </a>
                         </div>
+                        <div class="mt-12 flex items-center space-x-4 text-sm text-gray-400">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-200"></div>
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300"></div>
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-400"></div>
+                            </div>
+                            <span>Trusted by 500+ Dealers Nationwide</span>
+                        </div>
                     </div>
-                    <div class="hidden lg:flex justify-center items-center relative">
-                        <!-- High-quality image for luxury feel -->
-                        <div class="absolute -right-20 w-[600px] h-[600px] bg-blue-50 rounded-full -z-10 opacity-50 blur-3xl"></div>
-                        <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800" alt="Optical Technology" class="absolute w-[450px] h-[300px] object-cover rounded-3xl shadow-2xl transform -rotate-6 z-10 border-8 border-white">
+                    <div class="hidden lg:flex justify-end items-center relative">
+                        <div class="relative w-full max-w-lg aspect-square">
+                            <div class="absolute inset-0 bg-blue-50 rounded-[4rem] transform rotate-6 scale-95 opacity-50"></div>
+                            <div class="absolute inset-0 bg-blue-100/30 rounded-[4rem] transform -rotate-3 scale-105"></div>
 
-                        <!-- Rotating Lens Overlay -->
-                        <div class="hero-lens w-64 h-64 rounded-full border-4 border-[#1e88e5]/30 flex items-center justify-center glass relative z-20 ml-64 mt-32 shadow-2xl">
-                            <div class="w-48 h-48 rounded-full border-2 border-[#1e88e5]/40 flex items-center justify-center">
-                                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-[#1e88e5]/20 to-transparent flex items-center justify-center">
-                                    <svg class="w-16 h-16 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                    </svg>
+                            <!-- Main Hero Image matching user reference style -->
+                            <div class="relative w-full h-full rounded-[4rem] overflow-hidden shadow-2xl border-white border-8">
+                                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=1000" alt="Luxury Lens" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-[#0b1120]/20 to-transparent"></div>
+                            </div>
+
+                            <!-- Decorative Rotating Element -->
+                            <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-white/80 backdrop-blur-xl rounded-full p-8 shadow-2xl border border-blue-50 flex items-center justify-center hero-lens z-20">
+                                <svg class="w-full h-full text-[#2563eb] opacity-20" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="10 5" />
+                                    <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-[0.6rem] font-black uppercase tracking-widest text-[#2563eb]">Precision</span>
                                 </div>
                             </div>
-                            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-white/30 to-transparent opacity-60"></div>
                         </div>
                     </div>
                 </div>
@@ -117,79 +136,75 @@
                     <a href="all-lenses.html" class="text-[#1e88e5] font-bold hover:underline">View All Lenses</a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Product Card 1 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#0b2a4a]">RBS</div>
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">RBS</div>
                         </div>
-                        <div class="p-6 flex-grow">
+                        <div class="p-8 flex-grow">
                             <h3 class="text-xl font-bold mb-2">Progressive Advanced</h3>
-                            <p class="text-sm text-gray-500 mb-4">Multi-Coated, Blue Cut</p>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">MOQ: 50 Pairs</span>
-                                <span class="text-[#0b2a4a] font-bold">Contact for Price</span>
+                            <p class="text-sm text-gray-400 mb-6">Multi-Coated, Blue Cut</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 50 Pairs</span>
                             </div>
-                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Progressive%20Advanced" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Progressive%20Advanced" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
                             </a>
                         </div>
                     </div>
 
                     <!-- Product Card 2 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up" style="transition-delay: 100ms">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#0b2a4a]">Asahi Fuji</div>
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Asahi Fuji</div>
                         </div>
-                        <div class="p-6 flex-grow">
+                        <div class="p-8 flex-grow">
                             <h3 class="text-xl font-bold mb-2">Photo Grey Premium</h3>
-                            <p class="text-sm text-gray-500 mb-4">Photochromic, Hydrophobic</p>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">MOQ: 20 Pairs</span>
-                                <span class="text-[#0b2a4a] font-bold">Contact for Price</span>
+                            <p class="text-sm text-gray-400 mb-6">Photochromic, Hydrophobic</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 20 Pairs</span>
                             </div>
-                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Photo%20Grey%20Premium" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Photo%20Grey%20Premium" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
                             </a>
                         </div>
                     </div>
 
                     <!-- Product Card 3 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up" style="transition-delay: 200ms">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#0b2a4a]">Sunshade</div>
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Sunshade</div>
                         </div>
-                        <div class="p-6 flex-grow">
+                        <div class="p-8 flex-grow">
                             <h3 class="text-xl font-bold mb-2">Single Vision Pro</h3>
-                            <p class="text-sm text-gray-500 mb-4">Uncoated / Hard Coated</p>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">MOQ: 100 Pairs</span>
-                                <span class="text-[#0b2a4a] font-bold">Contact for Price</span>
+                            <p class="text-sm text-gray-400 mb-6">Uncoated / Hard Coated</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 100 Pairs</span>
                             </div>
-                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Single%20Vision%20Pro" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Single%20Vision%20Pro" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
                             </a>
                         </div>
                     </div>
 
                     <!-- Product Card 4 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up" style="transition-delay: 300ms">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#0b2a4a]">Clex</div>
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Clex</div>
                         </div>
-                        <div class="p-6 flex-grow">
+                        <div class="p-8 flex-grow">
                             <h3 class="text-xl font-bold mb-2">Blue Cut Ultra</h3>
-                            <p class="text-sm text-gray-500 mb-4">Anti-Reflective, UV420</p>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">MOQ: 50 Pairs</span>
-                                <span class="text-[#0b2a4a] font-bold">Contact for Price</span>
+                            <p class="text-sm text-gray-400 mb-6">Anti-Reflective, UV420</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 50 Pairs</span>
                             </div>
-                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Blue%20Cut%20Ultra" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Blue%20Cut%20Ultra" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
                             </a>
                         </div>
                     </div>
@@ -198,48 +213,58 @@
         </section>
 
         <!-- Technology Highlights -->
-        <section class="py-24 bg-[#0b2a4a] text-white overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="py-24 bg-[#0b1120] text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
                 <div class="text-center mb-20 fade-up">
                     <h2 class="text-4xl font-bold mb-4 text-white">Technology Highlights</h2>
-                    <p class="text-gray-400">Advanced coating solutions for every vision need.</p>
+                    <p class="text-gray-400 max-w-2xl mx-auto">Our advanced coating laboratory utilizes cutting-edge nanotechnology to provide superior clarity and protection for every environment.</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                    <div class="flex flex-col items-center text-center fade-up">
-                        <div class="w-32 h-32 rounded-full border-2 border-white/20 flex items-center justify-center mb-6 reflection">
-                            <div class="w-24 h-24 rounded-full bg-white/5 flex items-center justify-center text-sm font-bold">Clear</div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=400" alt="Uncoated" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Uncoated</h4>
-                        <p class="text-xs text-gray-400 uppercase tracking-tighter">Basic Protection</p>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Uncoated</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Basic Clarity</p>
                     </div>
-                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 100ms">
-                        <div class="w-32 h-32 rounded-full border-2 border-[#1e88e5]/40 flex items-center justify-center mb-6 reflection">
-                            <div class="w-24 h-24 rounded-full bg-[#1e88e5]/10 flex items-center justify-center text-[#1e88e5] text-sm font-bold">HMC</div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Multi Coated" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Multi Coated</h4>
-                        <p class="text-xs text-gray-400 uppercase tracking-tighter">Anti-Reflective</p>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Multi Coated</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Anti-Reflective</p>
                     </div>
-                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 200ms">
-                        <div class="w-32 h-32 rounded-full border-2 border-blue-400/40 flex items-center justify-center mb-6 reflection">
-                            <div class="w-24 h-24 rounded-full bg-blue-400/10 flex items-center justify-center text-blue-400 text-sm font-bold">Blue Cut</div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=400" alt="Blue Cut" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Blue Cut</h4>
-                        <p class="text-xs text-gray-400 uppercase tracking-tighter">Digital Shield</p>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Blue Cut</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Digital Shield</p>
                     </div>
-                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 300ms">
-                        <div class="w-32 h-32 rounded-full border-2 border-gray-400/40 flex items-center justify-center mb-6 reflection">
-                            <div class="w-24 h-24 rounded-full bg-gray-400/10 flex items-center justify-center text-gray-400 text-sm font-bold">Photo</div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=400" alt="Photo Grey" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Photo Grey</h4>
-                        <p class="text-xs text-gray-400 uppercase tracking-tighter">Adaptive Light</p>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Photo Grey</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Adaptive Light</p>
                     </div>
-                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 400ms">
-                        <div class="w-32 h-32 rounded-full border-2 border-[#1e88e5] flex items-center justify-center mb-6 reflection">
-                            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-[#1e88e5]/20 to-gray-400/20 flex items-center justify-center text-[#1e88e5] text-xs font-bold leading-tight">Photo<br>Blue Cut</div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1509660100803-8e78c71283f9?auto=format&fit=crop&q=80&w=400" alt="Photo Grey Blue Cut" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2 leading-tight">Photo Grey<br>Blue Cut</h4>
-                        <p class="text-xs text-gray-400 uppercase tracking-tighter">Ultimate Protection</p>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest leading-tight">Photo Blue Cut</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Ultimate Tech</p>
                     </div>
                 </div>
             </div>

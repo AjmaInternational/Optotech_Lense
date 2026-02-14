@@ -9,7 +9,8 @@ const components = {
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-10">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="all-lenses.html" class="text-[#0b1120] hover:text-[#2563eb] px-3 py-2 text-sm font-semibold tracking-wide transition-colors">Products</a>
                         <a href="sunshade.html" class="text-[#0b1120] hover:text-[#2563eb] px-3 py-2 text-sm font-semibold tracking-wide transition-colors">Sunshade</a>
                         <div class="relative group">
                             <button class="flex items-center text-[#0b1120] hover:text-[#2563eb] px-3 py-2 text-sm font-semibold tracking-wide transition-colors">
@@ -37,6 +38,7 @@ const components = {
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white/98 backdrop-blur-xl border-b border-gray-100">
             <div class="px-4 pt-4 pb-8 space-y-2">
+                <a href="all-lenses.html" class="block px-4 py-3 text-lg font-medium text-[#0b1120] hover:bg-gray-50">Products</a>
                 <a href="sunshade.html" class="block px-4 py-3 text-lg font-medium text-[#0b1120] hover:bg-gray-50">Sunshade</a>
                 <div class="px-4 py-3 text-lg font-bold text-[#0b1120] border-t border-gray-100 mt-2">Imported Brands</div>
                 <a href="rbs.html" class="block pl-8 py-3 text-base font-medium text-[#0b1120] hover:bg-gray-50">RBS</a>
@@ -78,10 +80,10 @@ const components = {
                         <li class="flex items-center"><svg class="h-6 w-6 mr-4 text-[#3b82f6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994-1.414-.586m0 0L11 14h4a2 2 0 012 2v2z"></path></svg> WhatsApp: +94 77 XXX XXXX</li>
                         <li>
                             <div class="mt-8 flex space-x-4">
-                                <a href="https://wa.me/94770000000" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-base font-bold transition-all flex items-center shadow-lg hover:scale-105">
-                                    WhatsApp Inquire
+                                <a href="https://wa.me/94770000000" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-4 rounded-full text-base font-bold transition-all flex items-center shadow-lg hover:scale-105">
+                                    Inquire Now
                                 </a>
-                                <a href="tel:+94112000000" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-4 rounded-full text-base font-bold transition-all flex items-center shadow-lg hover:scale-105">
+                                <a href="tel:+94112000000" class="bg-[#0b1120] hover:bg-black text-white px-8 py-4 rounded-full text-base font-bold transition-all flex items-center shadow-lg hover:scale-105">
                                     Call Now
                                 </a>
                             </div>

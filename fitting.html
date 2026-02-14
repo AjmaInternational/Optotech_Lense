@@ -58,10 +58,24 @@
                         </div>
                     </div>
                     <div class="fade-up">
-                         <div class="bg-slate-50 p-20 rounded-[4rem] border border-gray-100 flex items-center justify-center h-[500px] relative overflow-hidden shadow-inner">
-                              <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/5 to-transparent"></div>
-                              <div class="w-80 h-40 border-[12px] border-[#0b1120] rounded-[50px] relative z-10 shadow-2xl"></div>
-                              <div id="fitting-lens-detail" class="absolute w-72 h-36 bg-blue-500/10 backdrop-blur-xl rounded-[45px] border-2 border-blue-400/30 z-20 shadow-2xl"></div>
+                         <div class="group relative aspect-video w-full rounded-[3rem] overflow-hidden bg-[#0b1120] shadow-2xl">
+                             <!-- High-end video placeholder image -->
+                             <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200" alt="Laboratory Process" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-[3s]">
+
+                             <!-- Video Play Overlay -->
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                 <button class="w-24 h-24 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#2563eb]/20 transition-all duration-500">
+                                     <svg class="w-10 h-10 text-white fill-current" viewBox="0 0 24 24">
+                                         <path d="M8 5v14l11-7z"/>
+                                     </svg>
+                                 </button>
+                             </div>
+
+                             <!-- Overlay Text -->
+                             <div class="absolute bottom-10 left-10 text-white">
+                                 <p class="text-[10px] font-black uppercase tracking-[0.3em] mb-2 text-blue-400">Cinematic Tour</p>
+                                 <h4 class="text-xl font-bold">Inside Our Facility</h4>
+                             </div>
                          </div>
                     </div>
                 </div>
@@ -85,20 +99,5 @@
 
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            gsap.fromTo("#fitting-lens-detail",
-                { y: -300, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 2.5,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "power2.inOut"
-                }
-            );
-        });
-    </script>
 </body>
 </html>
