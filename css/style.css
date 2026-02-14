@@ -1,9 +1,91 @@
-body{font-family:Arial;margin:0;background:#fff;color:#0b2a4a}
-.navbar{display:flex;justify-content:space-between;padding:15px 40px;border-bottom:1px solid #eee}
-.navbar ul{display:flex;gap:20px;list-style:none}
-.navbar a{text-decoration:none;color:#0b2a4a;font-weight:bold}
-.hero{padding:100px 40px;text-align:center;background:#f5f9ff}
-.btn{display:inline-block;padding:12px 24px;background:#1e88e5;color:#fff;text-decoration:none;margin-top:20px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:40px}
-.card{padding:40px;border:1px solid #eee;text-align:center}
-footer{text-align:center;padding:40px}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --navy: #0b2a4a;
+    --blue: #1e88e5;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.reflection {
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 45%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.1) 55%,
+        transparent 100%
+    );
+    transform: rotate(30deg);
+    transition: 0.7s;
+    pointer-events: none;
+}
+
+.reflection:hover::after {
+    left: 100%;
+    top: 100%;
+}
+
+.parallax-bg {
+    will-change: transform;
+}
+
+.brand-card {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+}
+
+.fade-up {
+    /* Opacity and transform are handled by GSAP to avoid FOUC while ensuring progressive enhancement */
+    will-change: transform, opacity;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--navy);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}

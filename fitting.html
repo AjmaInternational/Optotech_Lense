@@ -1,1 +1,104 @@
-<h1>Lens Fitting</h1><p>Professional fitting services.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens Fitting Service | OPTO TECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white">
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="pt-20">
+        <!-- Hero -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+                <h1 class="text-5xl font-bold mb-6 text-[#0b2a4a]">Precision Lens Fitting</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Advanced laboratory services for the perfect optical assembly.
+                </p>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+                    <div class="fade-up">
+                        <h2 class="text-3xl font-bold mb-6 text-[#0b2a4a]">Our Fitting Process</h2>
+                        <p class="text-gray-600 mb-8">
+                            We use the latest automated edging technology to ensure that every lens fits perfectly into its frame. Our technicians monitor every step of the process to maintain the highest standards of quality.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="w-12 h-12 bg-[#1e88e5] text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                <div class="ml-6">
+                                    <h4 class="font-bold text-[#0b2a4a]">Digital Tracing</h4>
+                                    <p class="text-gray-500">Precise 3D mapping of the frame's eye-wire.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-12 h-12 bg-[#1e88e5] text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                <div class="ml-6">
+                                    <h4 class="font-bold text-[#0b2a4a]">Centration & Blocking</h4>
+                                    <p class="text-gray-500">Aligning the lens's optical center with the patient's pupils.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-12 h-12 bg-[#1e88e5] text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                <div class="ml-6">
+                                    <h4 class="font-bold text-[#0b2a4a]">Automated Edging</h4>
+                                    <p class="text-gray-500">Cutting the lens to the exact shape with micron accuracy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade-up">
+                        <!-- Fitting Animation Placeholder -->
+                        <div class="bg-gray-50 p-12 rounded-[3rem] border border-gray-100 flex items-center justify-center h-96 relative overflow-hidden shadow-inner">
+                             <div class="w-64 h-32 border-8 border-[#0b2a4a] rounded-[40px] relative z-10"></div>
+                             <div id="fitting-lens-page" class="absolute w-56 h-28 bg-[#1e88e5]/20 backdrop-blur-md rounded-[35px] border-2 border-[#1e88e5]/40 z-20"></div>
+                             <div class="absolute inset-0 bg-gradient-to-t from-gray-200/50 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="py-24 bg-[#0b2a4a] text-white text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-up">
+                <h2 class="text-4xl font-bold mb-8">Ready to upgrade your service?</h2>
+                <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Join our network of dealers and offer professional lens fitting to your customers.</p>
+                <a href="dealer.html" class="bg-[#1e88e5] text-white px-10 py-5 rounded-full font-bold hover:bg-white hover:text-[#0b2a4a] transition-all">
+                    Become a Dealer Today
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.fromTo("#fitting-lens-page",
+                { y: -200, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power2.inOut"
+                }
+            );
+        });
+    </script>
+</body>
+</html>
