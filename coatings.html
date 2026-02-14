@@ -13,118 +13,77 @@
 
     <div id="navbar-placeholder"></div>
 
-    <main class="pt-20">
+    <main>
         <!-- Hero -->
-        <section class="py-24 bg-[#0b2a4a] text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
-                <h1 class="text-5xl font-bold mb-6">Coatings & Materials</h1>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    The science behind the sight. Explore our advanced lens materials and revolutionary coating technologies.
+        <section class="py-32 bg-[#0b1120] text-white overflow-hidden relative">
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent"></div>
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
+                <h1 class="text-6xl md:text-8xl font-bold mb-10 luxury-title fade-up">Lens Technology</h1>
+                <p class="text-2xl text-gray-400 max-w-4xl mx-auto fade-up font-light leading-relaxed">
+                    Where material science meets optical precision. Explore our spectrum of advanced coatings and high-index materials.
                 </p>
             </div>
         </section>
 
-        <!-- Coating Types -->
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <!-- Uncoated -->
-                    <div class="fade-up border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                        <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-                            <span class="font-bold text-[#0b2a4a]">UC</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Uncoated</h3>
-                        <p class="text-gray-600 mb-6">The basic lens material, ideal for temporary use or specific industrial applications where clarity is the only requirement.</p>
-                        <ul class="text-sm text-gray-500 space-y-2">
-                            <li>• High Transparency</li>
-                            <li>• Economical Choice</li>
+        <!-- Coatings -->
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                    <!-- UC -->
+                    <div class="fade-up p-12 rounded-[3.5rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500 reflection">
+                        <div class="text-6xl font-black text-slate-200 mb-10">01</div>
+                        <h3 class="text-3xl font-bold mb-6 text-[#0b1120]">Uncoated</h3>
+                        <p class="text-gray-500 text-lg leading-relaxed mb-10">The fundamental lens base. High transparency for basic optical needs without additional treatments.</p>
+                        <ul class="space-y-4 text-[#2563eb] font-bold text-sm tracking-widest uppercase">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> 92% Light Trans.</li>
                         </ul>
                     </div>
-
                     <!-- HMC -->
-                    <div class="fade-up border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all" style="transition-delay: 100ms">
-                        <div class="w-16 h-16 bg-[#1e88e5]/10 rounded-2xl flex items-center justify-center mb-6">
-                            <span class="font-bold text-[#1e88e5]">HMC</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Hard Multi Coated</h3>
-                        <p class="text-gray-600 mb-6">Our standard professional coating. Reduces reflections and increases light transmission for crisper vision.</p>
-                        <ul class="text-sm text-gray-500 space-y-2">
-                            <li>• Anti-Reflective</li>
-                            <li>• Scratch Resistant</li>
-                            <li>• UV Protection</li>
+                    <div class="fade-up p-12 rounded-[3.5rem] bg-blue-50 border border-blue-100 hover:bg-white hover:shadow-2xl transition-all duration-500 reflection" style="transition-delay: 200ms">
+                        <div class="text-6xl font-black text-blue-100 mb-10">02</div>
+                        <h3 class="text-3xl font-bold mb-6 text-[#0b1120]">Multi-Coated</h3>
+                        <p class="text-gray-500 text-lg leading-relaxed mb-10">The professional standard. Multiple layers of anti-reflective coating to eliminate ghost images.</p>
+                        <ul class="space-y-4 text-[#2563eb] font-bold text-sm tracking-widest uppercase">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Anti-Reflective</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Scratch Resistant</li>
                         </ul>
                     </div>
-
                     <!-- Blue Cut -->
-                    <div class="fade-up border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all" style="transition-delay: 200ms">
-                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                            <span class="font-bold text-blue-600">BC</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Blue Cut</h3>
-                        <p class="text-gray-600 mb-6">Essential for the digital age. Specifically filters out harmful high-energy blue light from screens.</p>
-                        <ul class="text-sm text-gray-500 space-y-2">
-                            <li>• Digital Eye Strain Relief</li>
-                            <li>• Enhanced Contrast</li>
-                            <li>• Blocks UV420</li>
-                        </ul>
-                    </div>
-
-                    <!-- Photo Grey -->
-                    <div class="fade-up border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all">
-                        <div class="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mb-6">
-                            <span class="font-bold text-gray-700">PG</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Photo Grey</h3>
-                        <p class="text-gray-600 mb-6">Lenses that adapt to your environment. Darkens in sunlight and clears rapidly indoors.</p>
-                        <ul class="text-sm text-gray-500 space-y-2">
-                            <li>• Fast Activation</li>
-                            <li>• 100% UV Protection</li>
-                            <li>• Comfort in all light</li>
-                        </ul>
-                    </div>
-
-                    <!-- Photo Grey Blue Cut -->
-                    <div class="fade-up border border-[#1e88e5]/20 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all bg-gradient-to-br from-white to-[#1e88e5]/5" style="transition-delay: 100ms">
-                        <div class="w-16 h-16 bg-gradient-to-br from-[#1e88e5] to-blue-700 rounded-2xl flex items-center justify-center mb-6 text-white">
-                            <span class="font-bold">PRO</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Photo Grey Blue Cut</h3>
-                        <p class="text-gray-600 mb-6">The ultimate all-in-one solution. Combines light-adaptive technology with digital blue light filtering.</p>
-                        <ul class="text-sm text-[#1e88e5] font-semibold space-y-2">
-                            <li>• Maximum Eye Protection</li>
-                            <li>• Seamless Indoor/Outdoor Transition</li>
-                            <li>• Optimal Digital Comfort</li>
+                    <div class="fade-up p-12 rounded-[3.5rem] bg-[#0b1120] text-white shadow-2xl border border-blue-900/50 hover:-translate-y-4 transition-all duration-500" style="transition-delay: 400ms">
+                        <div class="text-6xl font-black text-blue-900/40 mb-10">03</div>
+                        <h3 class="text-3xl font-bold mb-6">Blue Cut</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed mb-10">Essential digital defense. Filters 420nm blue light to reduce eye strain from modern screen exposure.</p>
+                        <ul class="space-y-4 text-[#3b82f6] font-bold text-sm tracking-widest uppercase">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Digital Shield</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> UV420 Protection</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Materials -->
-        <section class="py-24 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 fade-up">
-                    <h2 class="text-4xl font-bold mb-4 text-[#0b2a4a]">Premium Materials</h2>
-                    <p class="text-gray-600">Sourced from Japan for unmatched clarity.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-10 rounded-3xl fade-up">
-                        <h4 class="text-xl font-bold mb-4 text-[#1e88e5]">1.56 Mid-Index</h4>
-                        <p class="text-gray-600">Thinner and lighter than standard plastic. Ideal for mild to moderate prescriptions.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-3xl fade-up" style="transition-delay: 100ms">
-                        <h4 class="text-xl font-bold mb-4 text-[#1e88e5]">1.61 High-Index</h4>
-                        <p class="text-gray-600">Significantly thinner lenses for higher prescriptions. Superior aesthetic and comfort.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-3xl fade-up">
-                        <h4 class="text-xl font-bold mb-4 text-[#1e88e5]">1.67 Ultra High-Index</h4>
-                        <p class="text-gray-600">The premium choice for very strong prescriptions. Exceptionally thin and lightweight.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-3xl fade-up" style="transition-delay: 100ms">
-                        <h4 class="text-xl font-bold mb-4 text-[#1e88e5]">Polycarbonate</h4>
-                        <p class="text-gray-600">Impact-resistant material perfect for active lifestyles and safety eyewear.</p>
-                    </div>
-                </div>
+        <!-- Materials Section -->
+        <section class="py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                     <div class="fade-up">
+                         <h2 class="text-5xl font-bold mb-10 text-[#0b1120] luxury-title">Japanese Precision Materials</h2>
+                         <p class="text-xl text-gray-500 mb-12 font-light leading-relaxed">Our substrates are sourced exclusively from leading Japanese chemical labs, ensuring the highest Abbe values and lowest chromatic aberration in the industry.</p>
+                         <div class="space-y-8">
+                             <div class="glass p-8 rounded-3xl">
+                                 <h4 class="text-2xl font-bold mb-3 text-[#0b1120]">1.67 Ultra-High Index</h4>
+                                 <p class="text-gray-500">35% thinner than standard plastic. The pinnacle of aesthetic and clarity for strong prescriptions.</p>
+                             </div>
+                             <div class="glass p-8 rounded-3xl">
+                                 <h4 class="text-2xl font-bold mb-3 text-[#0b1120]">Trivex & Polycarbonate</h4>
+                                 <p class="text-gray-500">Unbreakable safety for active lifestyles and children's eyewear.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="fade-up">
+                         <img src="https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&q=80&w=1000" alt="Material Lab" class="rounded-[4rem] shadow-2xl">
+                     </div>
+                 </div>
             </div>
         </section>
     </main>

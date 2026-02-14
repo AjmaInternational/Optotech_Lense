@@ -40,18 +40,21 @@
                         </div>
                     </div>
                     <div class="hidden lg:flex justify-center items-center relative">
-                        <!-- Lens Placeholder Animation -->
-                        <div class="hero-lens w-80 h-80 rounded-full border-4 border-[#1e88e5]/20 flex items-center justify-center glass relative">
-                            <div class="w-64 h-64 rounded-full border-2 border-[#1e88e5]/40 flex items-center justify-center">
-                                <div class="w-48 h-48 rounded-full bg-gradient-to-br from-[#1e88e5]/10 to-transparent flex items-center justify-center">
-                                    <svg class="w-24 h-24 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <!-- High-quality image for luxury feel -->
+                        <div class="absolute -right-20 w-[600px] h-[600px] bg-blue-50 rounded-full -z-10 opacity-50 blur-3xl"></div>
+                        <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800" alt="Optical Technology" class="absolute w-[450px] h-[300px] object-cover rounded-3xl shadow-2xl transform -rotate-6 z-10 border-8 border-white">
+
+                        <!-- Rotating Lens Overlay -->
+                        <div class="hero-lens w-64 h-64 rounded-full border-4 border-[#1e88e5]/30 flex items-center justify-center glass relative z-20 ml-64 mt-32 shadow-2xl">
+                            <div class="w-48 h-48 rounded-full border-2 border-[#1e88e5]/40 flex items-center justify-center">
+                                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-[#1e88e5]/20 to-transparent flex items-center justify-center">
+                                    <svg class="w-16 h-16 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                     </svg>
                                 </div>
                             </div>
-                            <!-- Reflection effect -->
-                            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-white/20 to-transparent opacity-50"></div>
+                            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-white/30 to-transparent opacity-60"></div>
                         </div>
                     </div>
                 </div>
@@ -79,20 +82,26 @@
                     <button class="brand-tab pb-4 px-2 font-bold border-b-2 border-transparent text-gray-500 hover:text-[#0b2a4a] transition-all" data-brand="3">Clex</button>
                 </div>
 
-                <div id="brand-card" class="bg-white rounded-3xl shadow-2xl overflow-hidden glass reflection border border-gray-100 max-w-5xl mx-auto">
+                <div id="brand-card" class="bg-white rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden glass reflection border border-gray-100 max-w-5xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div id="brand-content" class="p-12 flex flex-col justify-center">
                             <h3 id="brand-name" class="text-5xl font-bold mb-4">Sunshade</h3>
                             <p id="brand-tagline" class="text-xl text-gray-600 mb-8">Premium Protection, Crystal Clarity</p>
-                            <a id="brand-link" href="sunshade.html" class="inline-flex items-center text-[#1e88e5] font-bold hover:translate-x-2 transition-transform">
+                            <a id="brand-link" href="sunshade.html" class="btn-luxury btn-luxury-primary self-start">
                                 Explore Brand
-                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
                         <div class="h-96 md:h-auto overflow-hidden">
                             <img id="brand-image" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800" alt="Brand" class="w-full h-full object-cover">
                         </div>
                     </div>
+                </div>
+                <div class="mt-16 text-center fade-up">
+                    <a href="all-lenses.html" class="btn-luxury btn-luxury-outline">
+                        Explore More Lenses
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -108,7 +117,7 @@
                     <a href="all-lenses.html" class="text-[#1e88e5] font-bold hover:underline">View All Lenses</a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
                     <!-- Product Card 1 -->
                     <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up">
                         <div class="h-48 bg-gray-100 relative overflow-hidden group">

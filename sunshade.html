@@ -13,69 +13,116 @@
 
     <div id="navbar-placeholder"></div>
 
-    <main class="pt-20">
+    <main>
         <!-- Hero -->
         <section class="py-24 bg-white overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div class="fade-up">
-                        <div class="inline-block px-4 py-2 bg-[#1e88e5]/10 text-[#1e88e5] rounded-full text-sm font-bold mb-6">Signature Brand</div>
-                        <h1 class="text-6xl font-bold mb-6 text-[#0b2a4a]">SUNSHADE</h1>
-                        <p class="text-2xl text-gray-600 mb-8 leading-relaxed">
-                            Premium Protection, Crystal Clarity. Engineered for the ultimate outdoor and indoor visual experience.
+                        <div class="inline-block px-5 py-2 bg-blue-50 text-[#2563eb] rounded-full text-xs font-bold tracking-widest uppercase mb-8">Signature Brand</div>
+                        <h1 class="text-7xl font-bold mb-8 text-[#0b1120] luxury-title">SUNSHADE</h1>
+                        <p class="text-2xl text-gray-600 mb-10 leading-relaxed font-light">
+                            Premium Protection, Crystal Clarity. Engineered for the ultimate outdoor and indoor visual experience with adaptive tinting.
                         </p>
+                        <div class="flex space-x-6">
+                             <div class="flex flex-col items-center">
+                                 <div class="w-12 h-12 rounded-full bg-[#0b1120] text-white flex items-center justify-center mb-2">UV</div>
+                                 <span class="text-[10px] font-bold uppercase text-gray-400">100% UV</span>
+                             </div>
+                             <div class="flex flex-col items-center">
+                                 <div class="w-12 h-12 rounded-full bg-[#0b1120] text-white flex items-center justify-center mb-2">AR</div>
+                                 <span class="text-[10px] font-bold uppercase text-gray-400">Anti-Reflect</span>
+                             </div>
+                             <div class="flex flex-col items-center">
+                                 <div class="w-12 h-12 rounded-full bg-[#0b1120] text-white flex items-center justify-center mb-2">HD</div>
+                                 <span class="text-[10px] font-bold uppercase text-gray-400">High Def</span>
+                             </div>
+                        </div>
                     </div>
-                    <div class="fade-up h-[500px] rounded-[3rem] overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800" alt="Sunshade" class="w-full h-full object-cover">
+                    <div class="fade-up h-[600px] rounded-[3rem] overflow-hidden shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] relative">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000" alt="Sunshade" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b1120]/40 to-transparent"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Product Grid for Sunshade -->
-        <section class="py-24 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold mb-12 text-[#0b2a4a] fade-up">Sunshade Collections</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Product Card 1 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold mb-2">Sunshade Polarized</h3>
-                            <p class="text-sm text-gray-500 mb-4">Maximum Glare Reduction</p>
-                            <a href="https://wa.me/94770000000" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
-                            </a>
+        <!-- Color Switcher Section -->
+        <section class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                <div class="text-center mb-20 fade-up">
+                    <h2 class="text-4xl font-bold mb-4">The Spectrum of Vision</h2>
+                    <p class="text-gray-500 text-lg">Available in 5 signature tones to match your style and environment.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center bg-white p-16 rounded-[4rem] shadow-xl border border-gray-100">
+                    <div class="flex justify-center fade-up">
+                        <div class="relative w-full max-w-md aspect-square bg-gray-50 rounded-full flex items-center justify-center glass overflow-hidden reflection">
+                            <img id="lens-preview" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=600" alt="Lens Color Preview" class="w-4/5 h-4/5 object-contain transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
                         </div>
                     </div>
-                    <!-- Product Card 2 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up" style="transition-delay: 100ms">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="fade-up">
+                        <h3 id="color-name" class="text-3xl font-bold mb-6 text-[#0b1120]">Azure Blue</h3>
+                        <p id="color-desc" class="text-gray-600 mb-10 text-lg leading-relaxed">Our signature blue tint provides enhanced contrast and cool visual comfort in bright sunlight conditions.</p>
+
+                        <div class="flex space-x-5 mb-12">
+                            <button class="swatch w-12 h-12 rounded-full active bg-blue-500 shadow-lg transition-transform hover:scale-110" data-color="Blue" data-desc="Our signature blue tint provides enhanced contrast and cool visual comfort in bright sunlight conditions." data-img="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=600"></button>
+                            <button class="swatch w-12 h-12 rounded-full bg-purple-500 shadow-lg transition-transform hover:scale-110" data-color="Royal Purple" data-desc="A sophisticated purple tint that excels in moderate light and reduces glare from artificial sources." data-img="https://images.unsplash.com/photo-1582142839930-2233e73b21bd?auto=format&fit=crop&q=80&w=600"></button>
+                            <button class="swatch w-12 h-12 rounded-full bg-orange-500 shadow-lg transition-transform hover:scale-110" data-color="Amber Glow" data-desc="Perfect for overcast days and driving. Increases depth perception and blocks blue light effectively." data-img="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=600"></button>
+                            <button class="swatch w-12 h-12 rounded-full bg-green-500 shadow-lg transition-transform hover:scale-110" data-color="Forest Green" data-desc="Maintains natural color balance while providing excellent shade in high-glare environments." data-img="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=600"></button>
+                            <button class="swatch w-12 h-12 rounded-full bg-gray-500 shadow-lg transition-transform hover:scale-110" data-color="Classic Grey" data-desc="The ultimate all-rounder. True color perception with maximum shade and comfort." data-img="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=600"></button>
                         </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold mb-2">Sunshade Drive</h3>
-                            <p class="text-sm text-gray-500 mb-4">Optimized for Road Safety</p>
-                            <a href="https://wa.me/94770000000" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
-                            </a>
+
+                        <a href="https://wa.me/94770000000" class="btn-luxury btn-luxury-primary">
+                            Inquire about this color
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                <div class="flex justify-between items-end mb-16 fade-up">
+                    <h2 class="text-4xl font-bold">Sunshade Collections</h2>
+                    <a href="all-lenses.html" class="text-[#2563eb] font-bold hover:underline">View All Sunshade</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="brand-card bg-white rounded-3xl overflow-hidden fade-up">
+                        <div class="h-64 bg-gray-50">
+                            <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=600" alt="Lens" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold mb-3">Sunshade Polarized</h3>
+                            <p class="text-gray-500 mb-8">Ultimate glare protection.</p>
+                            <a href="https://wa.me/94770000000" class="btn-luxury btn-luxury-outline w-full justify-center">Inquire</a>
                         </div>
                     </div>
-                    <!-- Product Card 3 -->
-                    <div class="brand-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col fade-up" style="transition-delay: 200ms">
-                        <div class="h-48 bg-gray-100 relative overflow-hidden group">
-                            <img src="https://images.unsplash.com/photo-1582142839930-2233e73b21bd?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="brand-card bg-white rounded-3xl overflow-hidden fade-up" style="transition-delay: 100ms">
+                        <div class="h-64 bg-gray-50">
+                            <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=600" alt="Lens" class="w-full h-full object-cover">
                         </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold mb-2">Sunshade Classic</h3>
-                            <p class="text-sm text-gray-500 mb-4">Timeless Clarity</p>
-                            <a href="https://wa.me/94770000000" class="block text-center bg-[#25D366] text-white py-3 rounded-xl font-bold hover:bg-[#128C7E] transition-colors">
-                                WhatsApp Inquire
-                            </a>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold mb-3">Sunshade Drive</h3>
+                            <p class="text-gray-500 mb-8">Enhanced road clarity.</p>
+                            <a href="https://wa.me/94770000000" class="btn-luxury btn-luxury-outline w-full justify-center">Inquire</a>
                         </div>
                     </div>
+                    <div class="brand-card bg-white rounded-3xl overflow-hidden fade-up" style="transition-delay: 200ms">
+                        <div class="h-64 bg-gray-50">
+                            <img src="https://images.unsplash.com/photo-1582142839930-2233e73b21bd?auto=format&fit=crop&q=80&w=600" alt="Lens" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold mb-3">Sunshade Active</h3>
+                            <p class="text-gray-500 mb-8">Durability for sports.</p>
+                            <a href="https://wa.me/94770000000" class="btn-luxury btn-luxury-outline w-full justify-center">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20 text-center fade-up">
+                    <a href="all-lenses.html" class="btn-luxury btn-luxury-outline">Explore More Lenses</a>
                 </div>
             </div>
         </section>
@@ -85,5 +132,37 @@
 
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const swatches = document.querySelectorAll('.swatch');
+            const preview = document.getElementById('lens-preview');
+            const colorName = document.getElementById('color-name');
+            const colorDesc = document.getElementById('color-desc');
+
+            swatches.forEach(swatch => {
+                swatch.addEventListener('click', () => {
+                    // Update swatches
+                    swatches.forEach(s => s.classList.remove('active', 'ring-2', 'ring-offset-2', 'ring-[#0b1120]'));
+                    swatch.classList.add('active', 'ring-2', 'ring-offset-2', 'ring-[#0b1120]');
+
+                    const color = swatch.dataset.color;
+                    const desc = swatch.dataset.desc;
+                    const img = swatch.dataset.img;
+
+                    gsap.to(preview, {
+                        opacity: 0,
+                        scale: 0.9,
+                        duration: 0.4,
+                        onComplete: () => {
+                            preview.src = img;
+                            colorName.textContent = color;
+                            colorDesc.textContent = desc;
+                            gsap.to(preview, { opacity: 1, scale: 1, duration: 0.6, ease: 'power2.out' });
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

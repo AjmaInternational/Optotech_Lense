@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700;900&display=swap');
 
 :root {
-    --navy: #0b2a4a;
-    --blue: #1e88e5;
+    --navy: #0b1120;
+    --navy-light: #1e293b;
+    --blue: #2563eb;
+    --accent: #3b82f6;
     --white: #ffffff;
+    --bg-light: #f8fafc;
+    --glass: rgba(255, 255, 255, 0.7);
+    --border: rgba(226, 232, 240, 0.8);
 }
 
 body {
@@ -11,18 +16,30 @@ body {
     color: var(--navy);
     background-color: var(--white);
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
     color: var(--navy);
     font-weight: 700;
 }
 
+.luxury-title {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+section {
+    padding: 8rem 0; /* py-32 equivalent */
+}
+
 .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .reflection {
@@ -33,20 +50,20 @@ h1, h2, h3, h4, h5, h6 {
 .reflection::after {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
     background: linear-gradient(
         45deg,
         transparent 0%,
-        rgba(255, 255, 255, 0.1) 45%,
-        rgba(255, 255, 255, 0.5) 50%,
-        rgba(255, 255, 255, 0.1) 55%,
+        rgba(255, 255, 255, 0.2) 45%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0.2) 55%,
         transparent 100%
     );
     transform: rotate(30deg);
-    transition: 0.7s;
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
 }
 
@@ -60,32 +77,81 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-card {
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--border);
 }
 
 .brand-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent);
 }
 
 .fade-up {
-    /* Opacity and transform are handled by GSAP to avoid FOUC while ensuring progressive enhancement */
     will-change: transform, opacity;
+}
+
+.btn-luxury {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+}
+
+.btn-luxury-primary {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.btn-luxury-primary:hover {
+    background-color: var(--blue);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn-luxury-outline {
+    border: 2px solid var(--navy);
+    color: var(--navy);
+}
+
+.btn-luxury-outline:hover {
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--bg-light);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--navy);
-    border-radius: 4px;
+    background: var(--navy-light);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--blue);
+}
+
+/* Filter active state */
+.filter-btn.active {
+    background-color: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
+
+/* Swatch active state */
+.swatch.active {
+    ring: 2px;
+    ring-offset: 2px;
+    ring-color: var(--navy);
 }

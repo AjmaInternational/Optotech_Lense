@@ -1,13 +1,16 @@
 // Initialize GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-// Global Smooth Scroll (using native CSS is safer without external smooth scroll libraries, but we can enhance it)
+// Global Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -15,17 +18,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const setupAnimations = () => {
     gsap.utils.toArray('.fade-up').forEach((elem) => {
         // Set initial state
-        gsap.set(elem, { opacity: 0, y: 30 });
+        gsap.set(elem, { opacity: 0, y: 40 });
 
         gsap.to(elem, {
             scrollTrigger: {
                 trigger: elem,
-                start: 'top 85%',
+                start: 'top 90%',
                 toggleActions: 'play none none none'
             },
             opacity: 1,
             y: 0,
-            duration: 1,
+            duration: 1.4, // Slower for classic luxury feel
             ease: 'power3.out'
         });
     });
