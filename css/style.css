@@ -1,9 +1,158 @@
-body{font-family:Arial;margin:0;background:#fff;color:#0b2a4a}
-.navbar{display:flex;justify-content:space-between;padding:15px 40px;border-bottom:1px solid #eee}
-.navbar ul{display:flex;gap:20px;list-style:none}
-.navbar a{text-decoration:none;color:#0b2a4a;font-weight:bold}
-.hero{padding:100px 40px;text-align:center;background:#f5f9ff}
-.btn{display:inline-block;padding:12px 24px;background:#1e88e5;color:#fff;text-decoration:none;margin-top:20px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:40px}
-.card{padding:40px;border:1px solid #eee;text-align:center}
-footer{text-align:center;padding:40px}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700;900&display=swap');
+
+:root {
+    --navy: #0b1120;
+    --navy-light: #1e293b;
+    --blue: #2563eb;
+    --accent: #3b82f6;
+    --white: #ffffff;
+    --bg-light: #f8fafc;
+    --glass: rgba(255, 255, 255, 0.7);
+    --border: rgba(226, 232, 240, 0.8);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy);
+    background-color: var(--white);
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-size: 0.9375rem; /* 15px base for better scaling */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.luxury-title {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+section {
+    padding: 6rem 0; /* Reduced padding from 8rem to 6rem */
+}
+
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.reflection {
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection::after {
+    content: '';
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 45%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0.2) 55%,
+        transparent 100%
+    );
+    transform: rotate(30deg);
+    transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.reflection:hover::after {
+    left: 100%;
+    top: 100%;
+}
+
+.parallax-bg {
+    will-change: transform;
+}
+
+.brand-card {
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--border);
+}
+
+.brand-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent);
+}
+
+.fade-up {
+    will-change: transform, opacity;
+}
+
+.btn-luxury {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+}
+
+.btn-luxury-primary {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.btn-luxury-primary:hover {
+    background-color: var(--blue);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn-luxury-outline {
+    border: 2px solid var(--navy);
+    color: var(--navy);
+}
+
+.btn-luxury-outline:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--navy-light);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
+/* Filter active state */
+.filter-btn.active {
+    background-color: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
+
+/* Swatch active state */
+.swatch.active {
+    ring: 2px;
+    ring-offset: 2px;
+    ring-color: var(--navy);
+}

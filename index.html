@@ -1,52 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OptoTech | Home</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTO TECH | See the Difference. Be the Difference.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-white">
 
-<nav class="navbar">
-<div class="logo">OptoTech</div>
-<ul>
-<li><a href="sunshade.html">Sunshade</a></li>
-<li><a href="brands.html">Imported Brands</a></li>
-<li><a href="fitting.html">Lens Fitting</a></li>
-<li><a href="dealer.html">Become a Dealer</a></li>
-<li><a href="about.html">About</a></li>
-</ul>
-</nav>
+    <div id="navbar-placeholder"></div>
 
-<header class="hero">
-<h1>See the Difference. Be the Difference.</h1>
-<p>Wholesale Optical Lenses — Direct Import & Islandwide Delivery</p>
-<a class="btn" href="all-lenses.html">Explore All Lenses</a>
-</header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section relative h-screen flex items-center overflow-hidden bg-white">
+            <div class="hero-bg absolute inset-0 z-0 opacity-5">
+                <img src="https://images.unsplash.com/photo-1556761175-5973cf0f32e7?auto=format&fit=crop&q=80&w=2000" alt="Background" class="w-full h-full object-cover">
+            </div>
 
-<section class="brands">
-<h2>OUR SIGNATURE BRANDS</h2>
-<div class="grid">
-<div class="card">Sunshade</div>
-<div class="card">RBS</div>
-<div class="card">Asahi Fuji</div>
-<div class="card">Clex</div>
-</div>
-</section>
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-up">
+                        <div class="mb-6 flex items-center space-x-2 text-[#2563eb] font-bold tracking-widest uppercase text-xs">
+                            <span class="w-8 h-[1px] bg-[#2563eb]"></span>
+                            <span>Opto Tech Premium</span>
+                        </div>
+                        <h1 class="text-6xl md:text-8xl font-bold leading-tight mb-8">
+                            See the <span class="text-[#2563eb]">Difference.</span><br>
+                            Be the <span class="text-[#2563eb]">Difference.</span>
+                        </h1>
+                        <p class="text-lg text-gray-500 mb-10 max-w-md leading-relaxed">
+                            Experience the pinnacle of optical engineering. Precision-crafted lenses with advanced Japanese material and coating technology for the discerning professional.
+                        </p>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <a href="all-lenses.html" class="bg-[#0b1120] text-white px-10 py-5 rounded-full font-bold hover:bg-[#2563eb] transition-all transform hover:scale-105 shadow-xl flex items-center group">
+                                Explore Products
+                                <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                            <a href="dealer.html" class="text-[#0b1120] font-bold hover:text-[#2563eb] transition-all flex items-center group">
+                                Become a Dealer
+                                <svg class="ml-1 w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                        <div class="mt-12 flex items-center space-x-4 text-sm text-gray-400">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-200"></div>
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300"></div>
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-400"></div>
+                            </div>
+                            <span>Trusted by 500+ Dealers Nationwide</span>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex justify-end items-center relative">
+                        <div class="relative w-full max-w-lg aspect-square">
+                            <div class="absolute inset-0 bg-blue-50 rounded-[4rem] transform rotate-6 scale-95 opacity-50"></div>
+                            <div class="absolute inset-0 bg-blue-100/30 rounded-[4rem] transform -rotate-3 scale-105"></div>
 
-<section class="products">
-<h2>Featured Lenses</h2>
-<div class="grid">
-<div class="card">Progressive Lens</div>
-<div class="card">Blue Cut Lens</div>
-<div class="card">Photo Grey Lens</div>
-<div class="card">Bifocal Lens</div>
-</div>
-<a class="btn" href="all-lenses.html">Explore All</a>
-</section>
+                            <!-- Main Hero Image matching user reference style -->
+                            <div class="relative w-full h-full rounded-[4rem] overflow-hidden shadow-2xl border-white border-8">
+                                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=1000" alt="Luxury Lens" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-[#0b1120]/20 to-transparent"></div>
+                            </div>
 
-<footer>© OptoTech (Pvt) Ltd</footer>
+                            <!-- Decorative Rotating Element -->
+                            <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-white/80 backdrop-blur-xl rounded-full p-8 shadow-2xl border border-blue-50 flex items-center justify-center hero-lens z-20">
+                                <svg class="w-full h-full text-[#2563eb] opacity-20" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="10 5" />
+                                    <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-[0.6rem] font-black uppercase tracking-widest text-[#2563eb]">Precision</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg class="w-6 h-6 text-[#0b2a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7m14-8l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Our Signature Brands -->
+        <section class="py-24 bg-gray-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <h2 class="text-4xl font-bold mb-4">OUR SIGNATURE BRANDS</h2>
+                    <div class="w-20 h-1 bg-[#1e88e5] mx-auto"></div>
+                </div>
+
+                <div class="mb-12 flex justify-center space-x-4 md:space-x-8 border-b border-gray-200">
+                    <button class="brand-tab pb-4 px-2 font-bold border-b-2 border-[#1e88e5] text-[#1e88e5] transition-all" data-brand="0">Sunshade</button>
+                    <button class="brand-tab pb-4 px-2 font-bold border-b-2 border-transparent text-gray-500 hover:text-[#0b2a4a] transition-all" data-brand="1">RBS</button>
+                    <button class="brand-tab pb-4 px-2 font-bold border-b-2 border-transparent text-gray-500 hover:text-[#0b2a4a] transition-all" data-brand="2">Asahi Fuji</button>
+                    <button class="brand-tab pb-4 px-2 font-bold border-b-2 border-transparent text-gray-500 hover:text-[#0b2a4a] transition-all" data-brand="3">Clex</button>
+                </div>
+
+                <div id="brand-card" class="bg-white rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden glass reflection border border-gray-100 max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div id="brand-content" class="p-12 flex flex-col justify-center">
+                            <h3 id="brand-name" class="text-5xl font-bold mb-4">Sunshade</h3>
+                            <p id="brand-tagline" class="text-xl text-gray-600 mb-8">Premium Protection, Crystal Clarity</p>
+                            <a id="brand-link" href="sunshade.html" class="btn-luxury btn-luxury-primary self-start">
+                                Explore Brand
+                                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                        <div class="h-96 md:h-auto overflow-hidden">
+                            <img id="brand-image" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800" alt="Brand" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 text-center fade-up">
+                    <a href="all-lenses.html" class="btn-luxury btn-luxury-outline">
+                        Explore More Lenses
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Lenses -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-16 fade-up">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-4">Featured Lenses</h2>
+                        <div class="w-20 h-1 bg-[#1e88e5]"></div>
+                    </div>
+                    <a href="all-lenses.html" class="text-[#1e88e5] font-bold hover:underline">View All Lenses</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">RBS</div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Progressive Advanced</h3>
+                            <p class="text-sm text-gray-400 mb-6">Multi-Coated, Blue Cut</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 50 Pairs</span>
+                            </div>
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Progressive%20Advanced" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Asahi Fuji</div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Photo Grey Premium</h3>
+                            <p class="text-sm text-gray-400 mb-6">Photochromic, Hydrophobic</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 20 Pairs</span>
+                            </div>
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Photo%20Grey%20Premium" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Sunshade</div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Single Vision Pro</h3>
+                            <p class="text-sm text-gray-400 mb-6">Uncoated / Hard Coated</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 100 Pairs</span>
+                            </div>
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Single%20Vision%20Pro" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="brand-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col fade-up-group">
+                        <div class="h-56 bg-gray-50 relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=400" alt="Lens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-widest text-[#0b1120] uppercase">Clex</div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <h3 class="text-xl font-bold mb-2">Blue Cut Ultra</h3>
+                            <p class="text-sm text-gray-400 mb-6">Anti-Reflective, UV420</p>
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">MOQ: 50 Pairs</span>
+                            </div>
+                            <a href="https://wa.me/94770000000?text=I'm%20interested%20in%20Blue%20Cut%20Ultra" class="block text-center bg-[#0b1120] text-white py-4 rounded-xl font-bold hover:bg-[#2563eb] transition-all">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Highlights -->
+        <section class="py-24 bg-[#0b1120] text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-20 fade-up">
+                    <h2 class="text-4xl font-bold mb-4 text-white">Technology Highlights</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">Our advanced coating laboratory utilizes cutting-edge nanotechnology to provide superior clarity and protection for every environment.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=400" alt="Uncoated" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Uncoated</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Basic Clarity</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1511499767390-90342f4b4ce1?auto=format&fit=crop&q=80&w=400" alt="Multi Coated" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Multi Coated</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Anti-Reflective</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=400" alt="Blue Cut" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Blue Cut</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Digital Shield</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=400" alt="Photo Grey" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest">Photo Grey</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Adaptive Light</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center fade-up-group">
+                        <div class="w-40 h-40 rounded-full border-2 border-white/10 p-2 mb-8 reflection group cursor-pointer">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-white/5 border border-white/20">
+                                <img src="https://images.unsplash.com/photo-1509660100803-8e78c71283f9?auto=format&fit=crop&q=80&w=400" alt="Photo Grey Blue Cut" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 uppercase tracking-widest leading-tight">Photo Blue Cut</h4>
+                        <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Ultimate Tech</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Dealers Choose Us -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <h2 class="text-4xl font-bold mb-4">Why Dealers Choose Us</h2>
+                    <div class="w-20 h-1 bg-[#1e88e5] mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all text-center fade-up border border-gray-100">
+                        <div class="text-[#1e88e5] mb-6 flex justify-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"></path></svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Direct Import</h4>
+                        <p class="text-sm text-gray-500">Premium quality sourced globally.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all text-center fade-up border border-gray-100" style="transition-delay: 100ms">
+                        <div class="text-[#1e88e5] mb-6 flex justify-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.285a2 2 0 01-1.506 0l-.628-.285a6 6 0 00-3.86-.517l-2.388.477a2 2 0 00-1.022.547V18a2 2 0 002 2h11a2 2 0 002-2v-2.572zM4 9a5 5 0 0010 0 5 5 0 00-10 0z"></path></svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Japan Material</h4>
+                        <p class="text-sm text-gray-500">Superior clarity and durability.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all text-center fade-up border border-gray-100" style="transition-delay: 200ms">
+                        <div class="text-[#1e88e5] mb-6 flex justify-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Hydrophobic</h4>
+                        <p class="text-sm text-gray-500">Easy clean, water-repellent tech.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all text-center fade-up border border-gray-100" style="transition-delay: 300ms">
+                        <div class="text-[#1e88e5] mb-6 flex justify-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Island Delivery</h4>
+                        <p class="text-sm text-gray-500">Fast delivery across Sri Lanka.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all text-center fade-up border border-gray-100" style="transition-delay: 400ms">
+                        <div class="text-[#1e88e5] mb-6 flex justify-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Fitting Service</h4>
+                        <p class="text-sm text-gray-500">Precision lens-to-frame fitting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lens Fitting Preview Animation -->
+        <section class="py-24 overflow-hidden bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-up">
+                        <h2 class="text-4xl font-bold mb-6">Precision Fitting</h2>
+                        <p class="text-xl text-gray-600 mb-8">
+                            Our state-of-the-art fitting service ensures that every lens is perfectly aligned with the frame, providing optimal vision and comfort for the end-user.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-[#0b2a4a] font-medium">
+                                <svg class="w-6 h-6 mr-3 text-[#1e88e5]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Automated Edging Technology
+                            </li>
+                            <li class="flex items-center text-[#0b2a4a] font-medium">
+                                <svg class="w-6 h-6 mr-3 text-[#1e88e5]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Micron-Level Accuracy
+                            </li>
+                            <li class="flex items-center text-[#0b2a4a] font-medium">
+                                <svg class="w-6 h-6 mr-3 text-[#1e88e5]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Quality Assurance Testing
+                            </li>
+                        </ul>
+                        <a href="fitting.html" class="bg-[#1e88e5] text-white px-8 py-4 rounded-full font-bold hover:bg-[#0b2a4a] transition-all">
+                            Learn More About Fitting
+                        </a>
+                    </div>
+                    <div class="relative h-96 flex items-center justify-center fade-up">
+                        <!-- Animation Container -->
+                        <div class="w-full max-w-md bg-gray-50 rounded-3xl p-12 border border-gray-100 relative shadow-inner">
+                            <!-- Frame Placeholder -->
+                            <div class="w-64 h-32 border-8 border-[#0b2a4a] rounded-[40px] mx-auto relative overflow-hidden">
+                                <div class="absolute inset-0 border-t-2 border-white/20"></div>
+                            </div>
+                            <!-- Lens Placeholder (to be animated) -->
+                            <div id="fitting-lens" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[150%] w-56 h-28 bg-[#1e88e5]/20 backdrop-blur-sm rounded-[35px] border-2 border-[#1e88e5]/40 opacity-0">
+                                <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-[#0b2a4a] rounded-[3rem] overflow-hidden shadow-2xl relative fade-up">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-16 text-white">
+                            <h2 class="text-4xl font-bold mb-6">Visit Our Warehouse</h2>
+                            <p class="text-gray-400 mb-8">
+                                Centrally located for efficient distribution. Visit us to see our full range of products and meet our expert team.
+                            </p>
+                            <div class="space-y-4 mb-8">
+                                <p class="flex items-center"><svg class="w-6 h-6 mr-4 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 123 Optical Plaza, Colombo 03, Sri Lanka</p>
+                                <p class="flex items-center"><svg class="w-6 h-6 mr-4 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            </div>
+                            <a href="https://goo.gl/maps/placeholder" target="_blank" class="inline-block bg-white text-[#0b2a4a] px-8 py-4 rounded-full font-bold hover:bg-[#1e88e5] hover:text-white transition-all">
+                                Open in Google Maps
+                            </a>
+                        </div>
+                        <div class="h-96 lg:h-auto overflow-hidden relative group cursor-pointer" onclick="window.open('https://goo.gl/maps/placeholder', '_blank')">
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Map" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]">
+                            <div class="absolute inset-0 bg-[#0b2a4a]/20 group-hover:bg-transparent transition-colors"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/90 backdrop-blur p-4 rounded-full shadow-xl">
+                                    <svg class="w-8 h-8 text-[#1e88e5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
